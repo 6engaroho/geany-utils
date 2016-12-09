@@ -1,0 +1,176 @@
+# format=pipe
+## global objects
+dofile|([filename])|
+error|(message [, level])|
+_G|||
+_VERSION|||
+assert|(v [, message])|
+collectgarbage|([opt [, arg]])|
+dofile|([filename])|
+error|(message [, level])|
+getmetatable|(object)|
+ipairs|(t)|
+loadfile|([filename [, mode [, env]]])|
+load|(ld [, source [, mode [, env]]])|
+next|(table [, index])|
+pairs|(t)|
+pcall|(f [, arg1, ···])|
+print|(···)|
+rawequal|(v1, v2)|
+rawget|(table, index)|
+rawlen|(v)|
+rawset|(table, index, value)|
+require|()|
+select|(index, ···)|
+setmetatable|(table, metatable)|
+tonumber|(e [, base])|
+tostring|(v)|
+type|(v)|
+xpcall|(f, msgh [, arg1, ···])|
+byte|( i [, j])|
+char|(···)|
+dump|(function)|
+find|(pattern [, init [, plain]])|
+format|(formatstring, ···)|
+gmatch|(pattern)|
+gsub|(pattern, repl [, n])|
+len|()|
+lower|()|
+match|(pattern [, init])|
+rep|(n [, sep])|
+reverse|()|
+sub|(i [, j])|
+upper|()|
+## coroutine
+coroutine.create|()|
+coroutine.resume|()|
+coroutine.running|()|
+coroutine.status|()|
+coroutine.wrap|()|
+coroutine.yield|()|
+## debug
+debug.debug|()|
+debug.getuservalue|(udata, value)|
+debug.gethook|([thread])|
+debug.getinfo|([thread,] f [, what])|
+debug.getlocal|([thread,] f, local)|
+debug.getmetatable|(value)|
+debug.getregistry|()|
+debug.getupvalue|(f, up)|
+debug.setuservalue|(u)|
+debug.sethook|([thread,] hook, mask [, count])|
+debug.setlocal|([thread,] level, local, value)|
+debug.setmetatable|(value, table)|
+debug.setupvalue|(f, up, value)|
+debug.traceback|([thread,] [message [, level]])|
+debug.upvalueid|(f, n)|
+debug.upvaluejoin|(f1, n1, f2, n2)|
+## file
+file:close|([file])|
+file:flush|()|
+file:lines|()|
+file:read|(···)|
+file:seek|([whence [, offset]])|
+file:setvbuf|(mode [, size])|
+file:write|(···)|
+## io
+io.close|()|
+io.flush|()|
+io.input|([file])|
+io.lines|([filename] ···)|
+io.open|(filename [, mode])|
+io.output|([file])|
+io.popen|(prog [, mode])|
+io.read|(···)|
+io.stderr|()|
+io.stdin|()|
+io.stdout|()|
+io.tmpfile|()|
+io.type|(obj)|
+io.write|(···)|
+## os
+os.clock|()|
+os.date|([format [, time]])|
+os.difftime|(time2, time1)|
+os.execute|([command])|
+os.exit|([code [, close])|
+os.getenv|(varname)|
+os.remove|(filename)|
+os.rename|(oldname, newname)|
+os.setlocale|(locale [, category])|
+os.time|([table])|
+os.tmpname|()|
+## package
+package.config|||
+package.cpath|||
+package.loaded|||
+package.loadlib|(libname, funcname)|
+package.path|||
+package.preload|||
+package.searchers|||
+package.searchpath|(name, path [, sep [, rep]])|
+## string
+string.byte|(s [, i [, j]])|
+string.char|(···)|
+string.dump|(function)|
+string.find|(s, pattern [, init [, plain]])|
+string.format|(formatstring, ···)|
+string.gmatch|(s, pattern)|
+string.gsub|(s, pattern, repl [, n])|
+string.len|(s)|
+string.lower|(s)|
+string.match|(s, pattern [, init])|
+string.rep|(s, n [, sep])|
+string.reverse|(s)|
+string.sub|(s, i [, j])|
+string.upper|(s)|
+## table
+table.concat|(list [, sep [, i [, j]]])|
+table.insert|(list, [pos,] value)|
+table.pack|(···)|
+table.remove|(list [, pos])|
+table.sort|(list [, comp])|
+table.unpack|(list [, i [, j]])|
+## bit32
+bit32.arshift|(x, disp)|
+bit32.band|(···)|
+bit32.bnot|(x)|
+bit32.bor|(···)|
+bit32.btest|(···)|
+bit32.bxor|(···)|
+bit32.extract|(n, field [, width])|
+bit32.lrotate|(x, disp)|
+bit32.lshift|(x, disp)|
+bit32.replace|(n, v, field [, width])|
+bit32.rrotate|(x, disp)|
+bit32.rshift|(x, disp)|
+## math
+math.abs|(x)|
+math.acos|(x)|
+math.asin|(x)|
+math.atan|(x)|
+math.atan2|(y, x)|
+math.ceil|(x)|
+math.cos|(x)|
+math.cosh|(x)|
+math.deg|(x)|
+math.exp|(x)|
+math.floor|(x)|
+math.fmod|(x, y)|
+math.frexp|(x)|
+math.huge|||
+math.ldexp|(m, e)|
+math.log|(x [, base])|
+math.max|(x, ···)|
+math.min|(x, ···)|
+math.modf|(x)|
+math.pi|||
+math.pow|(x, y)|
+math.rad|(x)|
+math.random|([m [, n]])|
+math.randomseed|(x)|
+math.sin|(x)|
+math.sinh|(x)|
+math.sqrt|(x)|
+math.tan|(x)|
+math.tanh|(x)|
